@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: rgb(253,250,240); /* Soft Peach Background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+            text-align: center;
+            width: 320px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .login-container:hover {
+            transform: scale(1.03);
+        }
+
+        h2 {
+            color: rgb(245, 151, 148); /* Warm Pink */
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            background: rgba(245, 151, 148, 0.2);
+            color: rgb(245, 151, 148); /* Peachy-Pink Text */
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        input::placeholder {
+            color: rgba(245, 151, 148, 0.7); /* Soft Pink Placeholder */
+        }
+
+        input:focus {
+            background: white;
+            box-shadow: 0 0 12px rgba(245, 151, 148, 0.5);
+        }
+
+        button {
+            width: 95%;
+            padding: 12px;
+            background: rgb(245, 151, 148); /* Peachy-Pink */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 18px;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+            margin-top: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button:hover {
+            background: rgb(230, 120, 115); /* Slightly darker pink */
+            transform: translateY(-3px);
+        }
+
+        #error-message {
+            color: red;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .contact-section {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(245, 151, 148);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-section h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: rgb(230, 120, 115);
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .contact-section a {
+            color: rgb(230, 120, 115);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .contact-section a:hover {
+            color: rgb(200, 90, 85);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 420px) {
+            .login-container {
+                width: 90%;
+                padding: 25px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+            input {
+                font-size: 16px;
+            }
+            button {
+                font-size: 16px;
+            }
+            .contact-section p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="contact" placeholder="Contact Number" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <div class="contact-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:wearecodeblooded@gmail.com">wearecodeblooded@gmail.com</a></p>
+        <p>Phone: +91 909XXXXXXX</p>
+        <p>Address: P.O GGITS Tilwara Ghat, Bargi Hills, Jabalpur, Madhya Pradesh 482003</p>
+    </div>
+</body>
+</html>
