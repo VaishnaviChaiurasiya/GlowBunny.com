@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Care Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffdab9;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #6a1b9a;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background: #ffffff;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+            color: #8e24aa;
+        }
+        .product p {
+            color: #555;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d81b60;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #7b1fa2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #4a148c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Best Sellers</h1>
+        <div class="products">
+            <div class="product">
+                <img src="https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/8/8/8872_facial_tonic_mist_panchpushp_130ml__front_copy_1.png" alt="Toner">
+                <h3>Hydrating Facial Toner</h3>
+                <p>Refreshes and hydrates the skin.</p>
+                <p class="price">₹595</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/t/e/tejasvi_brightening_ghee_cream_front_1.png" alt="Night Cream">
+                <h3>Brightening Night Cream</h3>
+                <p>Enhances skin brightness overnight.</p>
+                <p class="price">₹1,750</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://where-to-buy.co/images/products/634608EB1A0763AF68CE8A8776D8AF3D.png" alt="Face Wash">
+                <h3>Oil-Free Face Wash</h3>
+                <p>Removes oil and impurities.</p>
+                <p class="price">₹556</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/510eWZCb3IL.jpg" alt="Moisturizer">
+                <h3>Daily Moisturizer SPF15</h3>
+                <p>Hydrates and protects against UV rays.</p>
+                <p class="price">₹650</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src=" https://m.media-amazon.com/images/I/71plgXXDKKL.jpg" alt="Scrub">
+                <h3>Tea Tree Facial Scrub</h3>
+                <p>Exfoliates and refreshes skin.</p>
+                <p class="price">₹870</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://www.thebodyshop.com/cdn/shop/files/1027003_VITAMIN_E_NIGHT_LOTION_50ML_BRONZE_INAEHPS067_3a1cd76c-dc40-4cea-a11a-4bab39d85b91.jpg?v=1736356590" alt="Vitamin E Cream">
+                <h3>Vitamin E Night Cream</h3>
+                <p>Deeply nourishes and repairs skin.</p>
+                <p class="price">₹1,440</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://beautybarn.in/wp-content/uploads/2017/10/Cosrx-Advanced-Snail-96-Mucin-Power-Essence-100ml.jpg" alt="Snail Mucin">
+                <h3>Snail Mucin Essence</h3>
+                <p>Hydrates and rejuvenates skin.</p>
+                <p class="price">₹1,015</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61hvQKKCbpL._AC_UF1000,1000_QL80_.jpg" alt="Acne Patches">
+                <h3>Acne Pimple Patches</h3>
+                <p>Targets breakouts and blemishes.</p>
+                <p class="price">₹230</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://images-cdn.ubuy.co.in/6341253cf9625a5c0270ee97-hadalabo-gokujun-hyaluronic-lotion.jpg" alt="Hyaluronic Lotion">
+                <h3>Super Hyaluronic Lotion</h3>
+                <p>Intense hydration for all skin types.</p>
+                <p class="price">₹1,910</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://cdn.shopify.com/s/files/1/0512/5429/6766/files/Hada-Labo-Gokujyun-UV-White-Gel-90g-japan-with-love_480x480.jpg?v=1627274526" alt="Sunscreen">
+                <h3>UV Sunscreen Gel</h3>
+                <p>Lightweight and protective against UV rays.</p>
+                <p class="price">₹1,700</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
