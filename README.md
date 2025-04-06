@@ -5,7 +5,7 @@ This project was developed as a part of Skillsvarz-Hackathon aimed at personaliz
 
 ##Team Roles:-
 Our team collaborated efficently to bring this idea to life. Here's how responsibilities were distributed :
-- **Vaishanavi Chaurasiya**- Leader,Research,offer & For you page
+- **Vaishanavi Chaurasiya**- Leader,Research,Offer & For you page
 - **Kartika Choudhary**-Quiz ,Product page( with brand), Profile page , My cart , Best sellers, Product Link 
 - **Unnati Singh**- Homepage
 - **Tanmay Chopra**-Skincare Guide
