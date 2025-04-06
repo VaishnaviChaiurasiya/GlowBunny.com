@@ -12,6 +12,6 @@ Our team collaborated efficently to bring this idea to life. Here's how responsi
 *Siddharth Nair*-Login page
 
 ## Special Thanks:-
-We'd like to thank [*Siddhu Singh](https://github.com/SIDDHUX9) for their valuable guidance on **[brief what they helped with, e.g., UI design, backend structure, debugging critical issues, etc.]*, even though they were not part of the official team.
+We'd like to thank [*Siddhu Singh](https://github.com/SIDDHUX9) for their valuable guidance on **[ UI design, debugging critical issues, etc.]*, even though they were not part of the official team.
 
 
