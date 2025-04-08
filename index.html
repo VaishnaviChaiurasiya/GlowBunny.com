@@ -140,84 +140,179 @@
       color: #5a3e4d;
       background: none;
       border: none;
+    }
 
-      .footer {
-        background-color: #f8c8dc;
-        text-align: center;
-        padding: 15px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-      }
+    .footer {
+      background-color: #f8c8dc;
+      text-align: center;
+      align-items: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-      .footer p {
-        margin: 5px 0;
-        font-size: 0.9em;
-        /* Profile Page Styling */
+    .footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      text-align: center;
+      align-items: center;
+    }
 
-        .profile-card {
-          background: #fff;
-          padding: 25px;
-          border-radius: 15px;
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-          width: 300px;
-          text-align: center;
-          transition: 0.3s;
-          border: 2px solid #ff6b81;
-          margin: auto;
-        }
+    /* Profile Page Styling */
+    .profile-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      transition: 0.3s;
+      border: 2px solid #ff6b81;
+      margin: auto;
+    }
 
-        .profile-image-container {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          border: 3px solid #ff6b81;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #fff;
-          overflow: hidden;
-          margin: 0 auto 10px;
-          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-        }
+    .profile-image-container {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #ff6b81;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      overflow: hidden;
+      margin: 0 auto 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        .profile-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          display: none;
-        }
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
 
-        .default-icon {
-          font-size: 40px;
-          color: #ff6b81;
-        }
+    .default-icon {
+      font-size: 40px;
+      color: #ff6b81;
+    }
 
-        .input-group {
-          margin: 10px 0;
-          text-align: left;
-          display: flex;
-          flex-direction: column;
-        }
+    .input-group {
+      margin: 10px 0;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
 
-        .save-btn {
-          background: #ff6b81;
-          color: white;
-          border: none;
-          padding: 10px;
-          margin-top: 10px;
-          cursor: pointer;
-          width: 100%;
-          border-radius: 15px;
-          font-size: 14px;
-          font-weight: bold;
-          transition: 0.3s;
-        }
+    .save-btn {
+      background: #ff6b81;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-        .save-btn:hover {
-          background: #e84362;
-        }
+    .save-btn:hover {
+      background: #e84362;
+    }
+
+    /* Search Bar Styles */
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 15px 0;
+      position: relative;
+    }
+
+    .search-bar {
+      display: flex;
+      width: 80%;
+      max-width: 500px;
+      position: relative;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 10px 15px;
+      border: 2px solid #f4a7b9;
+      border-radius: 25px;
+      font-size: 1em;
+      outline: none;
+      width: 100%;
+    }
+
+    .search-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      padding: 0 20px;
+      background-color: #f4a7b9;
+      color: white;
+      border: none;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .search-button:hover {
+      background-color: #f28dad;
+    }
+
+    /* Search Results Dropdown */
+    .search-results {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      max-width: 500px;
+      max-height: 300px;
+      overflow-y: auto;
+      background: white;
+      border: 1px solid #f4a7b9;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      display: none;
+    }
+
+    .search-result-item {
+      padding: 10px 15px;
+      border-bottom: 1px solid #ffe4ec;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .search-result-item:hover {
+      background-color: #ffe4ec;
+    }
+
+    .search-result-item h4 {
+      margin: 0 0 5px 0;
+      color: #5a3e4d;
+    }
+
+    .search-result-item p {
+      margin: 0;
+      font-size: 0.8em;
+      color: #7a5567;
+    }
+
+    .no-results {
+      padding: 10px 15px;
+      color: #7a5567;
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -239,6 +334,15 @@
     <p>Glowing Skin, One Click Away</p>
   </header>
 
+  <!-- Search Bar with Dropdown -->
+  <div class="search-container">
+    <div class="search-bar">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search For Products...." autocomplete="off">
+      <button class="search-button" onclick="performSearch()">Search</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
   <!-- Image -->
   <img class="main-image"
     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1350&q=80"
@@ -254,7 +358,7 @@
 
 
   <!-- Products -->
-  <div class="products">
+  <div class="products" id="productsContainer">
     <div class="product-card">
       <img
         src="https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/8/8/8872_facial_tonic_mist_panchpushp_130ml__front_copy_1.png"
@@ -294,23 +398,51 @@
   <div class="why-choose">
     <h2>Why Choose Code Blooded?</h2>
     <p>
-      At Code Blooded, we believe skincare should be simple, safe, and effective. Our products are dermatologically
-      tested, cruelty-free, and made with love using clean ingredients. With personalized recommendations, unbeatable
+      At Code Blooded, we believe skincare should be simple, safe, and effective. Our products are
+      dermatologically
+      tested, cruelty-free, and made with love using clean ingredients. With personalized recommendations,
+      unbeatable
       offers, and fast delivery, we're your perfect skincare partner.
     </p>
   </div>
   <!-- Contact Details -->
-  <footer>
+  <footer style="align-items: center; text-align: center; background-color: #f5b2c7;">
     <p> Phone number📞- +91 909XXXXXXX</p>
-    <p>| Gmail📧- wearecodeblooded@gmail.com</p>
+    <p> Gmail📧- wearecodeblooded@gmail.com</p>
     <p> Address📍- P.O, GGITS Tilwara Ghat, Bargi Hills, Jabalpur, Madhya Pradesh, 482003</p>
   </footer>
 
-
-  </div>
-
   <!-- JavaScript for Sidebar -->
   <script>
+    // Sample product data
+    const products = [
+      {
+        name: "Hydrating Facial Toner",
+        description: "Rs 595 - Refreshes and hydrates the skin",
+        image: "https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/8/8/8872_facial_tonic_mist_panchpushp_130ml__front_copy_1.png"
+      },
+      {
+        name: "Brightening Night Cream",
+        description: "Rs 1750 - Enhances skin brightness overnight",
+        image: "https://img.forestessentialsindia.com/pub/media/catalog/product/cache/0ee050c3ffc3555709b9bb6062f4d7e9/t/e/tejasvi_brightening_ghee_cream_front_1.png"
+      },
+      {
+        name: "Free Face Wash",
+        description: "Rs 556 - Removes oil and impurities",
+        image: "https://images.ctfassets.net/aub2fvcyp2t8/6VC8vvmJIlvWJ0hxWdxDOj/c65c7d4cec0e00e11659a0940f11cfe5/oil_free_acne_wash_175ml-min-en-in"
+      },
+      {
+        name: "Daily Mosturizer SPF15",
+        description: "Rs 650 - Hyderates and protect against UV rays",
+        image: "https://niram.in/cdn/shop/products/51z2FKXNBDL._SL1000.jpg?v=1632828776"
+      },
+      {
+        name: "Tea Tree Facial Scrub",
+        description: "Rs 870 - Exfoliates and refreshes skin",
+        image: "https://thebodyshop.com.ph/cdn/shop/products/Tea_Tree_Skin_Clearing_Daily_Scrub_01_300x300.jpg?v=1743423598"
+      }
+    ];
+
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
@@ -318,14 +450,95 @@
     function closeSidebar() {
       document.getElementById("mySidebar").style.width = "0";
     }
-    // Profile Picture Upload
-    document.getElementById('imageUpload').addEventListener('change', function (event) {
-      const file = event.target.files[0];
-      if (file) {
-        const imageUrl = URL.createObjectURL(file);
-        document.getElementById('profilePreview').src = imageUrl;
-        document.getElementById('profilePreview').style.display = 'block';
-        document.getElementById('defaultIcon').style.display = 'none';
+
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    searchInput.addEventListener('input', function () {
+      const searchTerm = this.value.toLowerCase().trim();
+
+      if (searchTerm.length === 0) {
+        searchResults.style.display = 'none';
+        return;
+      }
+
+      const matchingProducts = products.filter(product =>
+        product.name.toLowerCase().includes(searchTerm) ||
+        product.description.toLowerCase().includes(searchTerm)
+      );
+
+      displaySearchResults(matchingProducts);
+    });
+
+    function displaySearchResults(results) {
+      searchResults.innerHTML = '';
+
+      if (results.length === 0) {
+        searchResults.innerHTML = '<div class="no-results">No products found</div>';
+        searchResults.style.display = 'block';
+        return;
+      }
+
+      results.forEach(product => {
+        const resultItem = document.createElement('div');
+        resultItem.className = 'search-result-item';
+        resultItem.innerHTML = `
+                    <h4>${product.name}</h4>
+                    <p>${product.description}</p>
+                `;
+        resultItem.addEventListener('click', function () {
+          searchInput.value = product.name;
+          performSearch();
+          searchResults.style.display = 'none';
+        });
+        searchResults.appendChild(resultItem);
+      });
+
+      searchResults.style.display = 'block';
+    }
+
+    function performSearch() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      const productCards = document.querySelectorAll('.product-card');
+      let foundResults = false;
+
+      productCards.forEach(card => {
+        const productName = card.querySelector('h3').textContent.toLowerCase();
+        const productDesc = card.querySelector('p').textContent.toLowerCase();
+
+        if (productName.includes(searchTerm) || productDesc.includes(searchTerm)) {
+          card.style.display = 'block';
+          foundResults = true;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (!foundResults && searchTerm) {
+        const productsContainer = document.getElementById('productsContainer');
+        productsContainer.innerHTML = `<p style="width:100%; text-align:center;">No products found matching "${searchTerm}"</p>`;
+      } else if (!searchTerm) {
+        // If search is empty, show all products
+        productCards.forEach(card => {
+          card.style.display = 'block';
+        });
+      }
+
+      searchResults.style.display = 'none';
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.search-bar')) {
+        searchResults.style.display = 'none';
+      }
+    });
+
+    // Allow pressing Enter to search
+    searchInput.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        performSearch();
       }
     });
   </script>
