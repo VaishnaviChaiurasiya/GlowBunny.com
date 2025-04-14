@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,8 @@
             background-color: #ffdab9;
         }
 
-        h1, .product h3 {
+        h1,
+        .product h3 {
             font-family: 'Milkshake', cursive;
         }
 
@@ -25,6 +27,7 @@
             width: 80%;
             margin: auto;
             text-align: center;
+            padding-bottom: 30px;
         }
 
         h1 {
@@ -44,7 +47,7 @@
             margin: 15px;
             padding: 15px;
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
             transition: transform 0.3s;
         }
@@ -87,14 +90,35 @@
         .btn:hover {
             background: #4a148c;
         }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #6a1b9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            background: #4a148c;
+            transform: scale(1.05);
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>For You</h1>
         <div class="products">
             <div class="product">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Ps-63ZHSYKtm0NGYnHpMTVrJGzBNwYsixzrgtlQwUce_hGjV" alt="Toner">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Ps-63ZHSYKtm0NGYnHpMTVrJGzBNwYsixzrgtlQwUce_hGjV"
+                    alt="Toner">
                 <h3>Hydrating Facial Toner</h3>
                 <p>Refreshes and hydrates the skin.</p>
                 <p class="price">₹595</p>
@@ -108,6 +132,9 @@
                 <a href="#" class="btn">Add to Cart</a>
             </div>
         </div>
+
+        <a href="index.html" class="home-btn">Return to Home</a>
     </div>
 </body>
+
 </html>

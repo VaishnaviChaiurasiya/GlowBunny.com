@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,8 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: rgb(253,250,240); /* Soft Peach Background */
+            background: rgb(253, 250, 240);
+            /* Soft Peach Background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,7 +43,8 @@
         }
 
         h2 {
-            color: rgb(245, 151, 148); /* Warm Pink */
+            color: rgb(245, 151, 148);
+            /* Warm Pink */
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 20px;
@@ -61,7 +64,8 @@
             border: none;
             border-radius: 10px;
             background: rgba(245, 151, 148, 0.2);
-            color: rgb(245, 151, 148); /* Peachy-Pink Text */
+            color: rgb(245, 151, 148);
+            /* Peachy-Pink Text */
             font-size: 16px;
             font-weight: 500;
             transition: all 0.3s ease-in-out;
@@ -71,7 +75,8 @@
         }
 
         input::placeholder {
-            color: rgba(245, 151, 148, 0.7); /* Soft Pink Placeholder */
+            color: rgba(245, 151, 148, 0.7);
+            /* Soft Pink Placeholder */
         }
 
         input:focus {
@@ -82,7 +87,8 @@
         button {
             width: 95%;
             padding: 12px;
-            background: rgb(245, 151, 148); /* Peachy-Pink */
+            background: rgb(245, 151, 148);
+            /* Peachy-Pink */
             color: white;
             border: none;
             cursor: pointer;
@@ -95,7 +101,8 @@
         }
 
         button:hover {
-            background: rgb(230, 120, 115); /* Slightly darker pink */
+            background: rgb(230, 120, 115);
+            /* Slightly darker pink */
             transform: translateY(-3px);
         }
 
@@ -103,6 +110,25 @@
             color: red;
             margin-top: 12px;
             font-size: 14px;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: rgb(249, 97, 92);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            background: rgb(251, 62, 56);
+            transform: scale(1.05);
         }
 
         .contact-section {
@@ -143,21 +169,26 @@
                 width: 90%;
                 padding: 25px;
             }
+
             h2 {
                 font-size: 26px;
             }
+
             input {
                 font-size: 16px;
             }
+
             button {
                 font-size: 16px;
             }
+
             .contact-section p {
                 font-size: 16px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="login-container">
         <h2>Login</h2>
@@ -170,6 +201,7 @@
         </form>
         <p id="error-message"></p>
     </div>
+    <a href="index.html" class="home-btn">Return to Home</a>
 
     <div class="contact-section">
         <h3>Contact Us</h3>
@@ -178,4 +210,5 @@
         <p>Address: P.O GGITS Tilwara Ghat, Bargi Hills, Jabalpur, Madhya Pradesh 482003</p>
     </div>
 </body>
+
 </html>
