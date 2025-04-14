@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
             background: linear-gradient(to right, #ff9a9e, #fecfef);
             font-family: 'Milkshake', cursive;
         }
+
         .profile-card {
             background: #fff;
             padding: 25px;
@@ -24,9 +26,11 @@
             transition: 0.3s;
             border: 2px solid #ff6b81;
         }
+
         .profile-card:hover {
             transform: scale(1.02);
         }
+
         .profile-image-container {
             width: 80px;
             height: 80px;
@@ -40,16 +44,19 @@
             margin: 0 auto 10px;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
         }
+
         .profile-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: none;
         }
+
         .default-icon {
             font-size: 40px;
             color: #ff6b81;
         }
+
         .upload-btn {
             background: #ff6b81;
             color: white;
@@ -62,21 +69,25 @@
             transition: 0.3s;
             font-size: 12px;
         }
+
         .upload-btn:hover {
             background: #e84362;
         }
+
         .input-group {
             margin: 10px 0;
             text-align: left;
             display: flex;
             flex-direction: column;
         }
+
         label {
             font-size: 12px;
             font-weight: bold;
             color: #ff6b81;
             margin-bottom: 3px;
         }
+
         input {
             width: 100%;
             padding: 8px;
@@ -85,11 +96,13 @@
             font-size: 12px;
             transition: 0.3s;
         }
+
         input:focus {
             outline: none;
             border-color: #e84362;
             box-shadow: 0 0 6px rgba(232, 67, 98, 0.3);
         }
+
         .save-btn {
             background: #ff6b81;
             color: white;
@@ -103,11 +116,39 @@
             font-weight: bold;
             transition: 0.3s;
         }
+
         .save-btn:hover {
             background: #e84362;
         }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: rgb(249, 97, 92);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            background: rgb(251, 62, 56);
+            transform: scale(1.05);
+        }
     </style>
 </head>
+
 <body>
     <div class="profile-card">
         <h2>Profile Info</h2>
@@ -142,10 +183,14 @@
             <input type="tel" placeholder="Enter phone number">
         </div>
         <button class="save-btn">Save</button>
+        <div class="button-container">
+            <a href="index.html" class="home-btn">Return to Home</a>
+        </div>
     </div>
 
+
     <script>
-        document.getElementById('imageUpload').addEventListener('change', function(event) {
+        document.getElementById('imageUpload').addEventListener('change', function (event) {
             const file = event.target.files[0];
             if (file) {
                 const imageUrl = URL.createObjectURL(file);
@@ -155,5 +200,7 @@
             }
         });
     </script>
+
 </body>
+
 </html>

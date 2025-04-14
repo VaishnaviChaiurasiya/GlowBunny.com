@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +12,59 @@
             padding: 0;
             background-color: #ffdab9;
         }
+
         .container {
             width: 80%;
             margin: auto;
             text-align: center;
         }
+
         h1 {
             margin-top: 20px;
             color: #6a1b9a;
         }
+
         .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
         .product {
             background: #ffffff;
             width: 250px;
             margin: 15px;
             padding: 15px;
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
             transition: transform 0.3s;
         }
+
         .product:hover {
             transform: scale(1.05);
         }
+
         .product img {
             width: 100%;
             border-radius: 10px;
         }
+
         .product h3 {
             margin: 10px 0;
             color: #8e24aa;
         }
+
         .product p {
             color: #555;
         }
+
         .price {
             font-size: 18px;
             font-weight: bold;
             color: #d81b60;
         }
+
         .btn {
             display: inline-block;
             margin-top: 10px;
@@ -64,24 +75,47 @@
             border-radius: 5px;
             transition: background 0.3s;
         }
+
         .btn:hover {
             background: #4a148c;
         }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #6a1b9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            background: #4a148c;
+            transform: scale(1.05);
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Best Sellers</h1>
         <div class="products">
             <div class="product">
-                <img src="https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/8/8/8872_facial_tonic_mist_panchpushp_130ml__front_copy_1.png" alt="Toner">
+                <img src="https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/8/8/8872_facial_tonic_mist_panchpushp_130ml__front_copy_1.png"
+                    alt="Toner">
                 <h3>Hydrating Facial Toner</h3>
                 <p>Refreshes and hydrates the skin.</p>
                 <p class="price">₹595</p>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
             <div class="product">
-                <img src="https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/t/e/tejasvi_brightening_ghee_cream_front_1.png" alt="Night Cream">
+                <img src="https://img.forestessentialsindia.com/pub/media/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/t/e/tejasvi_brightening_ghee_cream_front_1.png"
+                    alt="Night Cream">
                 <h3>Brightening Night Cream</h3>
                 <p>Enhances skin brightness overnight.</p>
                 <p class="price">₹1,750</p>
@@ -109,14 +143,16 @@
                 <a href="#" class="btn">Add to Cart</a>
             </div>
             <div class="product">
-                <img src="https://www.thebodyshop.com/cdn/shop/files/1027003_VITAMIN_E_NIGHT_LOTION_50ML_BRONZE_INAEHPS067_3a1cd76c-dc40-4cea-a11a-4bab39d85b91.jpg?v=1736356590" alt="Vitamin E Cream">
+                <img src="https://www.thebodyshop.com/cdn/shop/files/1027003_VITAMIN_E_NIGHT_LOTION_50ML_BRONZE_INAEHPS067_3a1cd76c-dc40-4cea-a11a-4bab39d85b91.jpg?v=1736356590"
+                    alt="Vitamin E Cream">
                 <h3>Vitamin E Night Cream</h3>
                 <p>Deeply nourishes and repairs skin.</p>
                 <p class="price">₹1,440</p>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
             <div class="product">
-                <img src="https://beautybarn.in/wp-content/uploads/2017/10/Cosrx-Advanced-Snail-96-Mucin-Power-Essence-100ml.jpg" alt="Snail Mucin">
+                <img src="https://beautybarn.in/wp-content/uploads/2017/10/Cosrx-Advanced-Snail-96-Mucin-Power-Essence-100ml.jpg"
+                    alt="Snail Mucin">
                 <h3>Snail Mucin Essence</h3>
                 <p>Hydrates and rejuvenates skin.</p>
                 <p class="price">₹1,015</p>
@@ -130,20 +166,24 @@
                 <a href="#" class="btn">Add to Cart</a>
             </div>
             <div class="product">
-                <img src="https://images-cdn.ubuy.co.in/6341253cf9625a5c0270ee97-hadalabo-gokujun-hyaluronic-lotion.jpg" alt="Hyaluronic Lotion">
+                <img src="https://images-cdn.ubuy.co.in/6341253cf9625a5c0270ee97-hadalabo-gokujun-hyaluronic-lotion.jpg"
+                    alt="Hyaluronic Lotion">
                 <h3>Super Hyaluronic Lotion</h3>
                 <p>Intense hydration for all skin types.</p>
                 <p class="price">₹1,910</p>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
             <div class="product">
-                <img src="https://cdn.shopify.com/s/files/1/0512/5429/6766/files/Hada-Labo-Gokujyun-UV-White-Gel-90g-japan-with-love_480x480.jpg?v=1627274526" alt="Sunscreen">
+                <img src="https://cdn.shopify.com/s/files/1/0512/5429/6766/files/Hada-Labo-Gokujyun-UV-White-Gel-90g-japan-with-love_480x480.jpg?v=1627274526"
+                    alt="Sunscreen">
                 <h3>UV Sunscreen Gel</h3>
                 <p>Lightweight and protective against UV rays.</p>
                 <p class="price">₹1,700</p>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
         </div>
+        <a href="index.html" class="home-btn">Return to Home</a>
     </div>
 </body>
+
 </html>
