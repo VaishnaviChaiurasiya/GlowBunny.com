@@ -344,9 +344,82 @@
   </div>
 
   <!-- Image -->
-  <img class="main-image"
-    src="https://i00.eu/img/784/1600x1600/a7wsuh29/3585.jpg // https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fforest-essentials-logo%2F&psig=AOvVaw0bcELp_HGuTK4N1Kva9pN7&ust=1744810168842000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjWruTDktqMAxULwTgGHS1dE5gQjRx6BAgAEBk"
-    alt="Skincare Image">
+  <!-- Carousel Section -->
+<div class="carousel-container">
+  <div class="carousel" id="carousel">
+    <div class="slide"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bbcreamshop.eu%2Ftema%2Fblog%2Fcosrx-brand-the-leader-in-korean-cosmetics&psig=AOvVaw2z0StYcNJj3nFZ2uKR_uzB&ust=1744811385591000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwij7fyHl9qMAxUwSGwGHU_yHvUQjRx6BAgAEBk" alt="Slide 1"></div>
+    <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR92v18Wgso_hHhv2G3pEcxQv1YOR1dXGhgWypRlb0WwkPpotvc1OvmoFS5opV2q6vZxG4&usqp=CAU" alt="Slide 2"></div>
+    <div class="slide"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fthe-body-shop-logo%2F&psig=AOvVaw1QFzC_I9VBesFwpLc9kNkP&ust=1744811523948000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwi5wPnJl9qMAxXCTmwGHcxeIyYQjRx6BAgAEBk" alt="Slide 3"></div>
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+</div>
+
+<style>
+  .carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+
+  .carousel-btn:hover {
+    background-color: rgba(255,255,255,0.9);
+  }
+</style>
+
+<script>
+  let currentIndex = 0;
+  const carousel = document.getElementById('carousel');
+  const slides = document.querySelectorAll('.slide');
+
+  function moveSlide(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = slides.length - 1;
+    if (currentIndex >= slides.length) currentIndex = 0;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+
 
   <!-- Navigation Buttons -->
   <div class="nav-buttons">
