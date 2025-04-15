@@ -344,60 +344,103 @@
   </div>
 
   <!-- Image -->
- <!-- Auto Carousel Section -->
-<div class="carousel-container">
-  <div class="carousel" id="carousel">
-    <div class="slide"><img src="https://images.app.goo.gl/kzSbYy3NEbdGXEDZA" alt="Slide 1"></div>
-    <div class="slide"><img src="image2.jpg" alt="Slide 2"></div>
-    <div class="slide"><img src="image3.jpg" alt="Slide 3"></div>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carousel Slider</title>
+  <style>
+   .carousel {
+      width: 320px;
+      height: 200px;
+      position: relative;
+      perspective: 1000px;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide img {
+      width: 90%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #ffaa00;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    .dots {
+      text-align: center;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+      background-color: #ffaa00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carousel">
+    <div class="carousel-track">
+      <div class="slide"><img src="https://www.cosrx.com/cdn/shop/files/facebookimg_dedb55e4-9ae0-421a-b480-dbcd570723aa_1200x1200.jpg?v=1612428226" alt="Cosrx"></div>
+      <div class="slide"><img src="https://1000logos.net/wp-content/uploads/2020/07/Forest-Essentials-Logo.png" alt="Forest Essential"></div>
+      <div class="slide"><img src="https://1000logos.net/wp-content/uploads/2020/04/The-Body-Shop-Logo.png" alt="The Body Shop"></div>
+      <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScoyUUKeNYSbz4FKl7SDVaHcbqWtAnSX_4PA&s" alt="Neutrogena"></div>
+      <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Hada_Labo.png" alt="Hada Labo"></div>
+    </div>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
   </div>
-</div>
 
-<style>
-  .carousel-container {
-    position: relative;
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  }
+  <script>
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
 
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
+    function showSlide(index) {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
 
-  .slide {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
+    function autoSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
 
-  .slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-</style>
+    setInterval(autoSlide, 3000); // Change slide every 3 sec
+  </script>
 
-<script>
-  let currentIndex = 0;
-  const carousel = document.getElementById('carousel');
-  const slides = document.querySelectorAll('.slide');
-
-  function autoSlide(index) {
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function autoSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
-  }
-
-  setInterval(autoSlide, 3000); // Change slide every 3 seconds
-</script>
-
+</body>
+</html>
 
 
   <!-- Navigation Buttons -->
